@@ -1,7 +1,7 @@
 # CRONOMETRO   
 
-Este es un proyecto increíble.
+Cronometro con codigo ascii <3
 
 ## Vista previa
 
-![programm](vista.gif)
+![programm](vistaprevia.gif)
