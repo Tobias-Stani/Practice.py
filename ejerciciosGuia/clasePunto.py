@@ -26,25 +26,33 @@ class Punto:
         return math.sqrt((p._x - self._x)**2 + (p._y - self._y)**2)
 
 
-p1 = Punto(3, 4)
-p2 = Punto(6, 8)
 
-# Verificar si el punto está sobre el eje X
-print(p1.estaSobreEjeX())  # False
-print(p2.estaSobreEjeX())  # False
+class Circulo:
 
-# Verificar si el punto está sobre el eje Y
-print(p1.estaSobreEjeY())  # False
-print(p2.estaSobreEjeY())  # False
+    def __init_(self, radio):
+        self._radio = radio
+    
+    #getter y setter para el diametro.
+    @property
+    def radio(self):
+        return self._radio
+    
+    @radio.setter
+    def radio(self, valor):
+        if valor > 0:
+            self._radio = valor
+        else:
+            raise ValueError("el radio debe ser mayor que 0")
+        
+    
+    #getter para el perimetro
+    @property
+    def perimetro(self):
+        return 2 * math.pi * self._radio
+    
+    #getter para el area.
+    @property
+    def area(self):
+        return math.pi * (self._radio ** 2)
 
-# Verificar si el punto es el origen de coordenadas
-print(p1.esElOrigenDeCoordenadas())  # False
-print(p2.esElOrigenDeCoordenadas())  # False
 
-# Calcular la distancia al origen
-print(p1.distanciaAlOrigen())  # 5.0
-print(p2.distanciaAlOrigen())  # 10.0
-
-# Calcular la distancia entre dos puntos
-print(Punto.distancia(p1, p2))  # 5.0
-print(p1.distancia(p2))          # 5.0
