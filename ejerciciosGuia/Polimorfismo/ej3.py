@@ -248,12 +248,12 @@ def main():
     ]
     
     # 2. Entregar algunos videojuegos, películas y series
-    peliculas[0].entregar()  # Entregar la película 'Inception'
-    peliculas[2].entregar()  # Entregar 'The Godfather'
+    peliculas[0].entregar() 
+    peliculas[2].entregar()  
     
-    series[1].entregar()  # Entregar 'Stranger Things'
+    series[1].entregar() 
     
-    videojuegos[1].entregar()  # Entregar 'Cyberpunk 2077'
+    videojuegos[1].entregar() 
     
     # 3. Contar cuántos objetos están entregados
     entregados_peliculas = sum(1 for pelicula in peliculas if pelicula.isEntregado())
