@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-# URL de la página a scrapear
 url = "https://www.afa.com.ar/es/posts/clubes-afiliados-2024"
 
 # Realizar la solicitud HTTP para obtener el HTML de la página
