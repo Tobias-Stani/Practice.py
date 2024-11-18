@@ -26,5 +26,4 @@ def leer_sin_espacios(nombre_archivo):
     except Exception as e:
         print(f"Ha ocurrido un error: {e}")
 
-# Llamar a la función para leer el archivo y mostrarlo sin espacios
 leer_sin_espacios("archivo.txt")
